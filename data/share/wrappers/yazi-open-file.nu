@@ -12,5 +12,5 @@ def main [json: string] {
     $yazi_args | append ["--cwd-file" $out_file]
   }
 
-  run-external $termcmd "yazi" ...$yazi_args
+  run-external $termcmd "-T" "filechooser" "yazi" ...$yazi_args
 }

@@ -8,5 +8,5 @@ def main [json: string] {
 
   let yazi_args = ["--chooser-file" $out_file $path]
 
-  run-external $termcmd "yazi" ...$yazi_args
+  run-external $termcmd "-T" "filechooser" "yazi" ...$yazi_args
 }
